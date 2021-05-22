@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <div class="beholder">
+    <h1 id="fittext1">Administrationsbacheloruddannelsen1234</h1>
+    <div class="kasse">Test med max-width: 700px
+      <h1 id="fittext2">Administrationsbacheloruddannelsen1234</h1>
+    </div>
+    <p>De her er lavet med FitText.js. Man kan også sætte en max og en minimum størrelse. Man kan styre hvor aggresivt den skal skalere text</p>
+    <h2>Administrationsbacheloruddannelsen1234</h2>
+    <div class="kasse">Test med max-width: 700px
+      <h2>Administrationsbacheloruddannelsen1234</h2>
+    </div>
+    <p>Den her er lavet med flowtype.js Virker vest stort set som den nedenfor og styre hvornår den skal stoppe starte ift. skærmbredde, så den ikke ser sindssyg ud på en bred skærm.</p>
+<br/><br/><br/>
+    <p><b>Skal testes:</b> BigText.js skulle være mere adaptiv end FitText.js. </p>
+    <p><b>Skal testes:</b> SlabText.js skulle lave sådan nogle BT-agtige overskriftkasser </p>
+  </div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="fittext/jquery.fittext.js"></script>
+  <script src="flowtype/flowtype.js"></script>
+  <script type="text/javascript">
+    $("#fittext1").fitText(2);
+     $("#fittext2").fitText(2);
+  </script>
+  <script type="text/javascript">
+    $('h2').flowtype({
+ minimum   : 200,
+ maximum   : 3000,
+ minFont   : 12,
+ maxFont   : 200,
+ fontRatio : 20,
+});
+  </script>
+</body>
+
+</html>
